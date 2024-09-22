@@ -12,7 +12,7 @@ function App() {
   const handleJsonSubmit = async () => {
     try {
       const parsedData = JSON.parse(jsonInput);
-      const res = await axios.post('https://testbfhl.herokuapp.com/bfhl', { data: parsedData.data });
+      const res = await axios.post('https://bajaj-backend-lemon.vercel.app/bfhl', { data: parsedData.data });
       setResponseData(res.data);
       setDropdownVisible(true);
       setErrorMessage('');
